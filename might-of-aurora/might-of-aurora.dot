@@ -71,7 +71,7 @@ graph might_of_aurora
 // ==================== PLAYER CHARACTER GROUPS ====================
 
 	// Mandy (Travis)
-	subgraph mandy_group
+	subgraph mandy_links
 	{
 		edge [color="magenta"]
 		mandy
@@ -83,7 +83,7 @@ graph might_of_aurora
 	}
 
 	// Bobby (Steve)
-	subgraph bobby_group
+	subgraph bobby_links
 	{
 		edge [color="blue"]
 		bobby
@@ -95,7 +95,7 @@ graph might_of_aurora
 	}
 
 	// Sebastian (Roscoe)
-	subgraph sebastian_group
+	subgraph sebastian_links
 	{
 		edge [color="red"]
 		sebastian
@@ -118,7 +118,7 @@ graph might_of_aurora
 	}
 
 	// Vecklethorp (Erik)
-	subgraph vecklethorp_group
+	subgraph vecklethorp_links
 	{
 		edge [color="orange"]
 		vecklethorp
@@ -130,7 +130,7 @@ graph might_of_aurora
 	}
 
 	// Wyngard (Chris)
-	subgraph wyngard_group
+	subgraph wyngard_links
 	{
 		edge [color="green"]
 		wyngard
