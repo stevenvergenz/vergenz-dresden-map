@@ -1,47 +1,114 @@
-graph dresden
+graph might_of_aurora
 {
+	graph [overlap=scale]
+	node [fixedsize="true", width="0.75", height="0.75"]
+
 	// PCs
 	subgraph pcs
 	{
-		node [shape=box, style="filled"]
-		mandy [label="Mandy", fillcolor="purple"]
+		node [fixedsize="false", shape=box, style="filled"]
+		mandy [label="Mandy", fillcolor="magenta"]
 		bobby [label="Bobby", fillcolor="blue"]
 		sebastian [label="Sebastian", fillcolor="red"]
-		wyngard [label="Ser Wyngard", fillcolor="green"]
 		vecklethorp [label="Vecklethorp", fillcolor="orange"]
-	}
-	
-	subgraph vecklethorp_group
-	{
-		edge [color="orange"]
-		vecklethorp;
-		vecklethorp -- search
-		vecklethorp -- magic
-	}
-
-	subgraph sebastian_group
-	{
-		edge [color="red"]
-		sebastian;
-		sebastian -- search
-	}
-
-	subgraph bobby_group
-	{
-		edge [color="blue"]
-		bobby;
-		bobby -- fey
+		wyngard [label="Ser Wyngard", fillcolor="green"]
 	}
 
 	// Aspects
 	subgraph aspects
 	{
-		node [shape=triangle]
+		node [shape=triangle, regular=true]
 		search [label="The Search"]
 		war [label="Turf War"]
 		magic [label="Magic"]
 		fey [label="The Fey"]
-		
+		lines [label="Ley lines"]
+		domination [label="Domination"]
+		vendetta [label="Vendetta"]
+		opportunist [label="Opportunist"]
+		hunger [label="Hunger"]
+		diseased [label="Diseased"]
+		mercenary [label="Mercenary"]
+		council [label="White Council"]
+		cautious [label="Cautious"]
+		neutral [label="True Neutral"]
+		skepticism [label="Skepticism"]
+		social [label="Social"]
+		protective [label="Protective"]
+		technology [label="Technology"]
+		reckless [label="Reckless"]
+	}
+
+	subgraph faces
+	{
+		node [shape="circle"]
+		urkel [label="Urkel"]
+		megan [label="Megan"]
+		william [label="William"]
+		coats [label="Black Coats"]
+		escobar [label="Pablo Escobar"]
+		reggie [label="Reggie"]
+		bartholomew [label="Bartholomew"]
+		boshnik [label="Boshnik"]
+		voris [label="Voris"]
+		mitch [label="Mitch"]
+	}
+
+	subgraph locations
+	{
+		node [shape="diamond"]
+	}
+
+
+	subgraph mandy_group
+	{
+		edge [color="magenta"]
+		mandy;
+		mandy -- hunger
+		mandy -- cautious
+		mandy -- opportunist
+		mandy -- social
+	}
+
+	subgraph bobby_group
+	{
+		edge [color="blue"]
+		bobby
+		bobby -- fey
+		bobby -- domination
+		bobby -- cautious
+		bobby -- mercenary
+	}
+
+	subgraph sebastian_group
+	{
+		edge [color="red"]
+		sebastian
+		sebastian -- search
+		sebastian -- diseased
+		sebastian -- cautious
+		sebastian -- council
+	}
+
+
+	subgraph vecklethorp_group
+	{
+		edge [color="orange"]
+		vecklethorp
+		vecklethorp -- search
+		vecklethorp -- magic
+		vecklethorp -- neutral
+		vecklethorp -- skepticism
+	}
+
+	subgraph wyngard_group
+	{
+		edge [color="green"]
+		wyngard
+		wyngard -- vendetta
+		wyngard -- domination
+		wyngard -- cautious
+		wyngard -- social
 	}
 
 }
