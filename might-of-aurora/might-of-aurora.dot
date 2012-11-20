@@ -39,6 +39,7 @@ graph might_of_aurora
 		reckless [label="Reckless"]
 	}
 
+	// Faces (NPCs)
 	subgraph faces
 	{
 		node [shape="circle"]
@@ -54,22 +55,32 @@ graph might_of_aurora
 		mitch [label="Mitch"]
 	}
 
+	// Locations
 	subgraph locations
 	{
 		node [shape="diamond"]
+		ucf [label="UCF"]
+		universal [label="Universal"]
+		disney [label="Disney"]
+		pier [label="The Pier"]
+		metrowest [label="Metro West"]
+		lakejessup [label="Lake Jessup"]
 	}
 
+	// Player Characters
 
+	// Mandy (Travis)
 	subgraph mandy_group
 	{
 		edge [color="magenta"]
-		mandy;
+		mandy
 		mandy -- hunger
 		mandy -- cautious
 		mandy -- opportunist
 		mandy -- social
 	}
 
+	// Bobby (Steve)
 	subgraph bobby_group
 	{
 		edge [color="blue"]
@@ -80,6 +91,7 @@ graph might_of_aurora
 		bobby -- mercenary
 	}
 
+	// Sebastian (Roscoe)
 	subgraph sebastian_group
 	{
 		edge [color="red"]
@@ -88,9 +100,10 @@ graph might_of_aurora
 		sebastian -- diseased
 		sebastian -- cautious
 		sebastian -- council
+		sebastian -- metrowest
 	}
 
-
+	// Vecklethorp (Erik)
 	subgraph vecklethorp_group
 	{
 		edge [color="orange"]
@@ -101,6 +114,7 @@ graph might_of_aurora
 		vecklethorp -- skepticism
 	}
 
+	// Wyngard (Chris)
 	subgraph wyngard_group
 	{
 		edge [color="green"]
