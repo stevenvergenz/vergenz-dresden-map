@@ -1,6 +1,6 @@
 graph might_of_aurora
 {
-	graph [overlap=scale]
+	graph [overlap=scale, splines=ortho]
 	node [fixedsize="true", width="0.75", height="0.75"]
 
 // ==================== PLAYER CHARACTERS ====================
@@ -45,7 +45,7 @@ graph might_of_aurora
 		node [shape="circle"]
 		urkel [label="Urkel"]
 		megan [label="Megan"]
-		william [label="William"]
+		willam [label="Willam"]
 		coats [label="Black Coats"]
 		escobar [label="Pablo Escobar"]
 		reggie [label="Reggie"]
@@ -65,7 +65,7 @@ graph might_of_aurora
 		pier [label="The Pier"]
 		metro [label="Metro West"]
 		jessup [label="Lake Jessup"]
-		viet [label="Vietnamese District"]
+		viet [label="Vietnamese\nDistrict"]
 	}
 
 // ==================== PLAYER CHARACTER GROUPS ====================
@@ -142,14 +142,14 @@ graph might_of_aurora
 	}
 
 // ==================== FACE GROUPS ====================
-	subgraph npcs
+	subgraph face_links
 	{
 		edge [color="purple"]
-		urkle -- search
-		urkle -- willam
+		urkel -- search
+		urkel -- willam
 		megan -- search
 		megan -- war
-		megan -- opportunist
+		megan -- universal
 		willam -- vendetta
 		willam -- disney
 		willam -- magic
@@ -174,7 +174,7 @@ graph might_of_aurora
 
 // ==================== LOCATION GROUPS ====================
 
-	subgraph locations
+	subgraph location_links
 	{
 		ucf -- skepticism
 		disney -- fey
