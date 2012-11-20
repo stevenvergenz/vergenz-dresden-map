@@ -18,20 +18,20 @@ graph might_of_aurora
 	subgraph aspects
 	{
 		node [shape=triangle, regular=true]
-		search [label="The Search"]
-		war [label="Turf War"]
+		search [label="The\nSearch"]
+		war [label="Turf\nWar"]
 		magic [label="Magic"]
-		fey [label="The Fey"]
-		lines [label="Ley lines"]
+		fey [label="The\nFey"]
+		lines [label="Ley\nlines"]
 		domination [label="Domination"]
 		vendetta [label="Vendetta"]
 		opportunist [label="Opportunist"]
 		hunger [label="Hunger"]
 		diseased [label="Diseased"]
 		mercenary [label="Mercenary"]
-		council [label="White Council"]
+		council [label="White\nCouncil"]
 		cautious [label="Cautious"]
-		neutral [label="True Neutral"]
+		neutral [label="True\nNeutral"]
 		skepticism [label="Skepticism"]
 		social [label="Social"]
 		protective [label="Protective"]
@@ -46,8 +46,8 @@ graph might_of_aurora
 		urkel [label="Urkel"]
 		megan [label="Megan"]
 		willam [label="Willam"]
-		coats [label="Black Coats"]
-		escobar [label="Pablo Escobar"]
+		coats [label="Black\nCoats"]
+		escobar [label="Pablo\nEscobar"]
 		reggie [label="Reggie"]
 		bartholomew [label="Bartholomew"]
 		boshnik [label="Boshnik"]
@@ -60,11 +60,11 @@ graph might_of_aurora
 	{
 		node [shape="diamond"]
 		ucf [label="UCF"]
-		universal [label="Universal"]
+		universal [label="Universal\nStudios"]
 		disney [label="Disney"]
-		pier [label="The Pier"]
-		metro [label="Metro West"]
-		jessup [label="Lake Jessup"]
+		pier [label="The\nPier"]
+		metro [label="Metro\nWest"]
+		jessup [label="Lake\nJessup"]
 		viet [label="Vietnamese\nDistrict"]
 	}
 
@@ -101,13 +101,13 @@ graph might_of_aurora
 		sebastian
 
 		// High Concept
-		sebastian -- search
+		sebastian -- search [style="bold"]
 
 		// Motivation
-		sebastian -- diseased
+		sebastian -- diseased [style="dashed"]
 
 		// Trouble
-		sebastian -- council
+		sebastian -- council [style="dotted"]
 
 		// Aspects
 		sebastian -- cautious
