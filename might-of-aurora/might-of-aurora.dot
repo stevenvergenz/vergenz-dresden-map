@@ -142,103 +142,45 @@ graph might_of_aurora
 	}
 
 // ==================== FACE GROUPS ====================
-	subgraph urkel_group
+	subgraph npcs
 	{
+		edge [color="purple"]
 		urkle -- search
 		urkle -- willam
-	}
-
-	subgraph megan_group
-	{
 		megan -- search
 		megan -- war
 		megan -- opportunist
-		// megan -- mandy
-	}
-	subgraph william_group
-	{
 		willam -- vendetta
 		willam -- disney
-		// willam -- urkle
 		willam -- magic
-	}
-
-	subgraph coats_group
-	{
 		coats -- magic
 		coats -- bartholomew
 		coats -- council
 		coats -- fey
-	}
-
-	subgraph escobar_group
-	{
 		escobar -- ucf
 		escobar -- fey
 		escobar -- voris
 		escobar -- reggie
 		escobar -- hunger
-	}
-
-	subgraph reggie_group
-	{
-		// reggie -- escobar
 		reggie -- jessup
 		reggie -- magic
 		reggie -- fey
-	}
-
-	subgraph bartholomew_group
-	{
-		// bartholomew -- coats
 		bartholomew -- council
-	}
-
-	subgraph boshnik_group
-	{
 		boshnik -- social
-	}
-
-	subgraph voris_group
-	{
-		// voris -- escobar
 		voris -- hunger
 		voris -- mitch
-	}
-
-	subgraph mitch_group
-	{
 		mitch -- protective
-		// mitch -- voris
 	}
 
 // ==================== LOCATION GROUPS ====================
 
-	subgraph ucf_group
+	subgraph locations
 	{
 		ucf -- skepticism
-	}
-	subgraph universal_group
-	{
-	}
-	subgraph disney_group
-	{
 		disney -- fey
 		disney -- magic
-	}
-	subgraph pier_group
-	{
 		pier -- neutral
-	}
-	subgraph metro_group
-	{
 		metro -- diseased
-	}
-	subgraph jessup_group
-	{
-	}
-	subgraph viet_group
-	{
 	}
 
 }
