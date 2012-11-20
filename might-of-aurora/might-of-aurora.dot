@@ -1,0 +1,53 @@
+graph dresden
+{
+	// PCs
+	subgraph pcs
+	{
+		node [shape=box, style="filled"]
+		mandy [label="Mandy", fillcolor="purple"]
+		bobby [label="Bobby", fillcolor="blue"]
+		sebastian [label="Sebastian", fillcolor="red"]
+		wyngard [label="Ser Wyngard", fillcolor="green"]
+		vecklethorp [label="Vecklethorp", fillcolor="orange"]
+	}
+	
+	subgraph vecklethorp_group
+	{
+		edge [color="orange"]
+		vecklethorp;
+		vecklethorp -- search
+		vecklethorp -- magic
+	}
+
+	subgraph sebastian_group
+	{
+		edge [color="red"]
+		sebastian;
+		sebastian -- search
+	}
+
+	subgraph bobby_group
+	{
+		edge [color="blue"]
+		bobby;
+		bobby -- fey
+	}
+
+	// Aspects
+	subgraph aspects
+	{
+		node [shape=triangle]
+		search [label="The Search"]
+		war [label="Turf War"]
+		magic [label="Magic"]
+		fey [label="The Fey"]
+		
+	}
+
+}
+
+/*graph g {
+	a -- b
+	a [label="hello",shape=ellipse,fillcolor="burlywood",style="filled"];
+	b [label="graphviz",shape=box,fillcolor="palegreen",style="filled,rounded"];
+}*/
