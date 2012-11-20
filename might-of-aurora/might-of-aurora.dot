@@ -3,7 +3,7 @@ graph might_of_aurora
 	graph [overlap=scale]
 	node [fixedsize="true", width="0.75", height="0.75"]
 
-	// PCs
+// ==================== PLAYER CHARACTERS ====================
 	subgraph pcs
 	{
 		node [fixedsize="false", shape=box, style="filled"]
@@ -14,7 +14,7 @@ graph might_of_aurora
 		wyngard [label="Ser Wyngard", fillcolor="green"]
 	}
 
-	// Aspects
+// ==================== ASPECTS ====================
 	subgraph aspects
 	{
 		node [shape=triangle, regular=true]
@@ -39,7 +39,7 @@ graph might_of_aurora
 		reckless [label="Reckless"]
 	}
 
-	// Faces (NPCs)
+// ==================== FACES ====================
 	subgraph faces
 	{
 		node [shape="circle"]
@@ -55,7 +55,7 @@ graph might_of_aurora
 		mitch [label="Mitch"]
 	}
 
-	// Locations
+// ==================== LOCATIONS ====================
 	subgraph locations
 	{
 		node [shape="diamond"]
@@ -63,11 +63,12 @@ graph might_of_aurora
 		universal [label="Universal"]
 		disney [label="Disney"]
 		pier [label="The Pier"]
-		metrowest [label="Metro West"]
-		lakejessup [label="Lake Jessup"]
+		metro [label="Metro West"]
+		jessup [label="Lake Jessup"]
+		viet [label="Vietnamese District"]
 	}
 
-	// Player Characters
+// ==================== PLAYER CHARACTER GROUPS ====================
 
 	// Mandy (Travis)
 	subgraph mandy_group
@@ -78,6 +79,7 @@ graph might_of_aurora
 		mandy -- cautious
 		mandy -- opportunist
 		mandy -- social
+		mandy -- megan
 	}
 
 	// Bobby (Steve)
@@ -89,6 +91,7 @@ graph might_of_aurora
 		bobby -- domination
 		bobby -- cautious
 		bobby -- mercenary
+		bobby -- viet
 	}
 
 	// Sebastian (Roscoe)
@@ -96,11 +99,22 @@ graph might_of_aurora
 	{
 		edge [color="red"]
 		sebastian
+
+		// High Concept
 		sebastian -- search
+
+		// Motivation
 		sebastian -- diseased
-		sebastian -- cautious
+
+		// Trouble
 		sebastian -- council
-		sebastian -- metrowest
+
+		// Aspects
+		sebastian -- cautious
+
+		// Locations
+		sebastian -- metro
+
 	}
 
 	// Vecklethorp (Erik)
@@ -112,6 +126,7 @@ graph might_of_aurora
 		vecklethorp -- magic
 		vecklethorp -- neutral
 		vecklethorp -- skepticism
+		vecklethorp -- ucf
 	}
 
 	// Wyngard (Chris)
@@ -123,6 +138,107 @@ graph might_of_aurora
 		wyngard -- domination
 		wyngard -- cautious
 		wyngard -- social
+		wyngard -- willam
+	}
+
+// ==================== FACE GROUPS ====================
+	subgraph urkel_group
+	{
+		urkle -- search
+		urkle -- willam
+	}
+
+	subgraph megan_group
+	{
+		megan -- search
+		megan -- war
+		megan -- opportunist
+		// megan -- mandy
+	}
+	subgraph william_group
+	{
+		willam -- vendetta
+		willam -- disney
+		// willam -- urkle
+		willam -- magic
+	}
+
+	subgraph coats_group
+	{
+		coats -- magic
+		coats -- bartholomew
+		coats -- council
+		coats -- fey
+	}
+
+	subgraph escobar_group
+	{
+		escobar -- ucf
+		escobar -- fey
+		escobar -- voris
+		escobar -- reggie
+		escobar -- hunger
+	}
+
+	subgraph reggie_group
+	{
+		// reggie -- escobar
+		reggie -- jessup
+		reggie -- magic
+		reggie -- fey
+	}
+
+	subgraph bartholomew_group
+	{
+		// bartholomew -- coats
+		bartholomew -- council
+	}
+
+	subgraph boshnik_group
+	{
+		boshnik -- social
+	}
+
+	subgraph voris_group
+	{
+		// voris -- escobar
+		voris -- hunger
+		voris -- mitch
+	}
+
+	subgraph mitch_group
+	{
+		mitch -- protective
+		// mitch -- voris
+	}
+
+// ==================== LOCATION GROUPS ====================
+
+	subgraph ucf_group
+	{
+		ucf -- skepticism
+	}
+	subgraph universal_group
+	{
+	}
+	subgraph disney_group
+	{
+		disney -- fey
+		disney -- magic
+	}
+	subgraph pier_group
+	{
+		pier -- neutral
+	}
+	subgraph metro_group
+	{
+		metro -- diseased
+	}
+	subgraph jessup_group
+	{
+	}
+	subgraph viet_group
+	{
 	}
 
 }
