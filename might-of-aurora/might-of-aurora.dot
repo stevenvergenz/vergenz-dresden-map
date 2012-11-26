@@ -7,7 +7,7 @@ graph might_of_aurora
 	subgraph pcs
 	{
 		node [fixedsize="false", shape=box, style="filled"]
-		mandy [label="Mandy", fillcolor="magenta"]
+		mandy [label="Mandy", fillcolor="coral"]
 		bobby [label="Bobby", fillcolor="blue"]
 		sebastian [label="Sebastian", fillcolor="red"]
 		vecklethorp [label="Vecklethorp", fillcolor="orange"]
@@ -73,8 +73,8 @@ graph might_of_aurora
 	// Mandy (Travis)
 	subgraph mandy_links
 	{
-		edge [color="magenta"]
-		mandy
+		edge [color="coral"]
+		//mandy
 		mandy -- hunger
 		mandy -- cautious
 		mandy -- opportunist
@@ -86,7 +86,7 @@ graph might_of_aurora
 	subgraph bobby_links
 	{
 		edge [color="blue"]
-		bobby
+		//bobby
 		bobby -- fey
 		bobby -- domination
 		bobby -- cautious
@@ -98,7 +98,7 @@ graph might_of_aurora
 	subgraph sebastian_links
 	{
 		edge [color="red"]
-		sebastian
+		//sebastian
 
 		// High Concept
 		sebastian -- search [style="bold"]
@@ -121,7 +121,7 @@ graph might_of_aurora
 	subgraph vecklethorp_links
 	{
 		edge [color="orange"]
-		vecklethorp
+		//vecklethorp
 		vecklethorp -- search
 		vecklethorp -- magic
 		vecklethorp -- neutral
@@ -133,7 +133,7 @@ graph might_of_aurora
 	subgraph wyngard_links
 	{
 		edge [color="green"]
-		wyngard
+		//wyngard
 		wyngard -- vendetta
 		wyngard -- domination
 		wyngard -- cautious
