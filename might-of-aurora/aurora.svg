@@ -64,13 +64,14 @@
 <polygon fill="blue" stroke="black" points="739,-396 667,-396 667,-324 739,-324 739,-396"/>
 <text text-anchor="middle" x="703" y="-356.3" font-family="Times,serif" font-size="14.00">Bobby</text>
 </g>
-<!-- The Sidhe -->
-<g id="node11" class="node"><title>The Sidhe</title>
+<!-- The\nSidhe -->
+<g id="node11" class="node"><title>The\nSidhe</title>
 <polygon fill="none" stroke="black" points="575,-180 539,-126 611,-126 575,-180"/>
-<text text-anchor="middle" x="575" y="-140.3" font-family="Times,serif" font-size="14.00">The Sidhe</text>
+<text text-anchor="middle" x="575" y="-147.8" font-family="Times,serif" font-size="14.00">The</text>
+<text text-anchor="middle" x="575" y="-132.8" font-family="Times,serif" font-size="14.00">Sidhe</text>
 </g>
-<!-- Bobby&#45;&#45;The Sidhe -->
-<g id="edge18" class="edge"><title>Bobby&#45;&#45;The Sidhe</title>
+<!-- Bobby&#45;&#45;The\nSidhe -->
+<g id="edge18" class="edge"><title>Bobby&#45;&#45;The\nSidhe</title>
 <path fill="none" stroke="blue" d="M684,-323.998C684,-265.434 684,-156 684,-156 684,-156 621.404,-156 591.083,-156"/>
 </g>
 <!-- Domination -->
@@ -95,13 +96,14 @@
 <g id="edge22" class="edge"><title>Bobby&#45;&#45;Cautious</title>
 <path fill="none" stroke="blue" d="M669.667,-323.619C669.667,-316.925 669.667,-312 669.667,-312 669.667,-312 541.667,-312 541.667,-312 541.667,-312 541.667,-253.86 541.667,-252.043"/>
 </g>
-<!-- Viet District -->
-<g id="node45" class="node"><title>Viet District</title>
+<!-- Viet\nDistrict -->
+<g id="node45" class="node"><title>Viet\nDistrict</title>
 <polygon fill="none" stroke="black" points="729,-288 693,-252 729,-216 765,-252 729,-288"/>
-<text text-anchor="middle" x="729" y="-248.3" font-family="Times,serif" font-size="14.00">Viet District</text>
+<text text-anchor="middle" x="729" y="-255.8" font-family="Times,serif" font-size="14.00">Viet</text>
+<text text-anchor="middle" x="729" y="-240.8" font-family="Times,serif" font-size="14.00">District</text>
 </g>
-<!-- Bobby&#45;&#45;Viet District -->
-<g id="edge26" class="edge"><title>Bobby&#45;&#45;Viet District</title>
+<!-- Bobby&#45;&#45;Viet\nDistrict -->
+<g id="edge26" class="edge"><title>Bobby&#45;&#45;Viet\nDistrict</title>
 <path fill="none" stroke="blue" d="M716,-323.737C716,-307.682 716,-289.273 716,-275.124"/>
 </g>
 <!-- Sebastian -->
@@ -318,8 +320,8 @@
 <g id="edge78" class="edge"><title>Black\nCoats&#45;&#45;Magic</title>
 <path fill="none" stroke="purple" d="M1454,-221.214C1454,-209.087 1454,-198 1454,-198 1454,-198 1083,-198 1083,-198 1083,-198 1083,-164.379 1083,-150.194"/>
 </g>
-<!-- Black\nCoats&#45;&#45;The Sidhe -->
-<g id="edge84" class="edge"><title>Black\nCoats&#45;&#45;The Sidhe</title>
+<!-- Black\nCoats&#45;&#45;The\nSidhe -->
+<g id="edge84" class="edge"><title>Black\nCoats&#45;&#45;The\nSidhe</title>
 <path fill="none" stroke="purple" d="M1445.5,-228.544C1445.5,-218.923 1445.5,-210 1445.5,-210 1445.5,-210 607,-210 607,-210 607,-210 607,-146.046 607,-144.048"/>
 </g>
 <!-- Black\nCoats&#45;&#45;White\nCouncil -->
@@ -341,8 +343,8 @@
 <text text-anchor="middle" x="177" y="-363.8" font-family="Times,serif" font-size="14.00">Pablo</text>
 <text text-anchor="middle" x="177" y="-348.8" font-family="Times,serif" font-size="14.00">Escobar</text>
 </g>
-<!-- Pablo\nEscobar&#45;&#45;The Sidhe -->
-<g id="edge88" class="edge"><title>Pablo\nEscobar&#45;&#45;The Sidhe</title>
+<!-- Pablo\nEscobar&#45;&#45;The\nSidhe -->
+<g id="edge88" class="edge"><title>Pablo\nEscobar&#45;&#45;The\nSidhe</title>
 <path fill="none" stroke="purple" d="M183.5,-324.369C183.5,-273.463 183.5,-186 183.5,-186 183.5,-186 541.667,-186 541.667,-186 541.667,-186 541.667,-146.584 541.667,-144.12"/>
 </g>
 <!-- Pablo\nEscobar&#45;&#45;Hunger -->
@@ -375,8 +377,8 @@
 <g id="edge98" class="edge"><title>Reggie&#45;&#45;Magic</title>
 <path fill="none" stroke="purple" d="M259,-220.788C259,-211.62 259,-204 259,-204 259,-204 1029.67,-204 1029.67,-204 1029.67,-204 1029.67,-145.86 1029.67,-144.043"/>
 </g>
-<!-- Reggie&#45;&#45;The Sidhe -->
-<g id="edge100" class="edge"><title>Reggie&#45;&#45;The Sidhe</title>
+<!-- Reggie&#45;&#45;The\nSidhe -->
+<g id="edge100" class="edge"><title>Reggie&#45;&#45;The\nSidhe</title>
 <path fill="none" stroke="purple" d="M241,-215.714C241,-203.078 241,-192 241,-192 241,-192 544.333,-192 544.333,-192 544.333,-192 544.333,-146.953 544.333,-144.138"/>
 </g>
 <!-- Lake\nJessup -->
@@ -427,17 +429,18 @@
 <g id="edge117" class="edge"><title>Disney&#45;&#45;Magic</title>
 <path fill="none" stroke="black" d="M1032.33,-249.33C1032.33,-232.959 1032.33,-146.754 1032.33,-144.064"/>
 </g>
-<!-- Disney&#45;&#45;The Sidhe -->
-<g id="edge115" class="edge"><title>Disney&#45;&#45;The Sidhe</title>
+<!-- Disney&#45;&#45;The\nSidhe -->
+<g id="edge115" class="edge"><title>Disney&#45;&#45;The\nSidhe</title>
 <path fill="none" stroke="black" d="M995,-219.842C995,-184.297 995,-132 995,-132 995,-132 705.608,-132 607.259,-132"/>
 </g>
-<!-- The Pier -->
-<g id="node42" class="node"><title>The Pier</title>
+<!-- The\nPier -->
+<g id="node42" class="node"><title>The\nPier</title>
 <polygon fill="none" stroke="black" points="1383,-396 1347,-360 1383,-324 1419,-360 1383,-396"/>
-<text text-anchor="middle" x="1383" y="-356.3" font-family="Times,serif" font-size="14.00">The Pier</text>
+<text text-anchor="middle" x="1383" y="-363.8" font-family="Times,serif" font-size="14.00">The</text>
+<text text-anchor="middle" x="1383" y="-348.8" font-family="Times,serif" font-size="14.00">Pier</text>
 </g>
-<!-- The Pier&#45;&#45;True\nNeutral -->
-<g id="edge119" class="edge"><title>The Pier&#45;&#45;True\nNeutral</title>
+<!-- The\nPier&#45;&#45;True\nNeutral -->
+<g id="edge119" class="edge"><title>The\nPier&#45;&#45;True\nNeutral</title>
 <path fill="none" stroke="black" d="M1395,-335.763C1395,-315.861 1395,-288.117 1395,-270.107"/>
 </g>
 <!-- Metro\nWest&#45;&#45;Diseased -->

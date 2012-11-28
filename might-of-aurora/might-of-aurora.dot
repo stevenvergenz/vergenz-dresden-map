@@ -21,7 +21,7 @@ graph might_of_aurora
 		"The\nSearch"
 		"Turf\nWar"
 		Magic
-		"The Sidhe"
+		"The\nSidhe"
 		"Ley\nLines"
 		Domination
 		Vendetta
@@ -62,10 +62,10 @@ graph might_of_aurora
 		UCF
 		"Universal\nStudios"
 		Disney
-		"The Pier"
+		"The\nPier"
 		"Metro\nWest"
 		"Lake\nJessup"
-		"Viet District"
+		"Viet\nDistrict"
 	}
 
 // ==================== PLAYER CHARACTER GROUPS ====================
@@ -87,11 +87,11 @@ graph might_of_aurora
 	{
 		edge [color="blue"]
 		//Bobby
-		Bobby -- "The Sidhe"
+		Bobby -- "The\nSidhe"
 		Bobby -- Domination
 		Bobby -- Cautious
 		Bobby -- Mercenary
-		Bobby -- "Viet District"
+		Bobby -- "Viet\nDistrict"
 	}
 
 	// Sebastian (Roscoe)
@@ -156,15 +156,15 @@ graph might_of_aurora
 		"Black\nCoats" -- Magic
 		"Black\nCoats" -- Bartholomew
 		"Black\nCoats" -- "White\nCouncil"
-		"Black\nCoats" -- "The Sidhe"
+		"Black\nCoats" -- "The\nSidhe"
 		"Pablo\nEscobar" -- UCF
-		"Pablo\nEscobar" -- "The Sidhe"
+		"Pablo\nEscobar" -- "The\nSidhe"
 		"Pablo\nEscobar" -- Voris
 		"Pablo\nEscobar" -- Reggie
 		"Pablo\nEscobar" -- Hunger
 		Reggie -- "Lake\nJessup"
 		Reggie -- Magic
-		Reggie -- "The Sidhe"
+		Reggie -- "The\nSidhe"
 		Bartholomew -- "White\nCouncil"
 		Boshnik -- Social
 		Voris -- Hunger
@@ -177,9 +177,9 @@ graph might_of_aurora
 	subgraph location_links
 	{
 		UCF -- Skepticism
-		Disney -- "The Sidhe"
+		Disney -- "The\nSidhe"
 		Disney -- Magic
-		"The Pier" -- "True\nNeutral"
+		"The\nPier" -- "True\nNeutral"
 		"Metro\nWest" -- Diseased
 	}
 
