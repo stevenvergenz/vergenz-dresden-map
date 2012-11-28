@@ -1,186 +1,186 @@
 graph might_of_aurora
 {
 	graph [overlap=scale, splines=ortho]
-	node [fixedsize="true", width="0.75", height="0.75"]
+	node [fixedsize="true", width="1.0", height="1.0"]
 
 // ==================== PLAYER CHARACTERS ====================
 	subgraph pcs
 	{
 		node [fixedsize="false", shape=box, style="filled"]
-		mandy [label="Mandy", fillcolor="coral"]
-		bobby [label="Bobby", fillcolor="blue"]
-		sebastian [label="Sebastian", fillcolor="red"]
-		vecklethorp [label="Vecklethorp", fillcolor="orange"]
-		wyngard [label="Ser Wyngard", fillcolor="green"]
+		"Mandy" [fillcolor="coral"]
+		"Bobby" [fillcolor="blue"]
+		"Sebastian" [fillcolor="red"]
+		"Vecklethorp" [fillcolor="orange"]
+		"Sir Wyngard" [fillcolor="green"]
 	}
 
 // ==================== ASPECTS ====================
 	subgraph aspects
 	{
 		node [shape=triangle, regular=true]
-		search [label="The\nSearch"]
-		war [label="Turf\nWar"]
-		magic [label="Magic"]
-		fey [label="The\nFey"]
-		lines [label="Ley\nlines"]
-		domination [label="Domination"]
-		vendetta [label="Vendetta"]
-		opportunist [label="Opportunist"]
-		hunger [label="Hunger"]
-		diseased [label="Diseased"]
-		mercenary [label="Mercenary"]
-		council [label="White\nCouncil"]
-		cautious [label="Cautious"]
-		neutral [label="True\nNeutral"]
-		skepticism [label="Skepticism"]
-		social [label="Social"]
-		protective [label="Protective"]
-		technology [label="Technology"]
-		reckless [label="Reckless"]
+		"The\nSearch"
+		"Turf\nWar"
+		Magic
+		"The Sidhe"
+		"Ley\nLines"
+		Domination
+		Vendetta
+		Opportunist
+		Hunger
+		Diseased
+		Mercenary
+		"White\nCouncil"
+		Cautious
+		"True\nNeutral"
+		Skepticism
+		Social
+		Protective
+		Technology
+		Reckless
 	}
 
 // ==================== FACES ====================
 	subgraph faces
 	{
 		node [shape="circle"]
-		urkel [label="Urkel"]
-		megan [label="Megan"]
-		willam [label="Willam"]
-		coats [label="Black\nCoats"]
-		escobar [label="Pablo\nEscobar"]
-		reggie [label="Reggie"]
-		bartholomew [label="Bartholomew"]
-		boshnik [label="Boshnik"]
-		voris [label="Voris"]
-		mitch [label="Mitch"]
+		Urkel
+		Megan
+		Willam
+		"Black\nCoats"
+		"Pablo\nEscobar"
+		Reggie
+		Bartholomew
+		Boshnik
+		Voris
+		Mitch
 	}
 
 // ==================== LOCATIONS ====================
 	subgraph locations
 	{
 		node [shape="diamond"]
-		ucf [label="UCF"]
-		universal [label="Universal\nStudios"]
-		disney [label="Disney"]
-		pier [label="The\nPier"]
-		metro [label="Metro\nWest"]
-		jessup [label="Lake\nJessup"]
-		viet [label="Vietnamese\nDistrict"]
+		UCF
+		"Universal\nStudios"
+		Disney
+		"The Pier"
+		"Metro\nWest"
+		"Lake\nJessup"
+		"Viet District"
 	}
 
 // ==================== PLAYER CHARACTER GROUPS ====================
 
 	// Mandy (Travis)
-	subgraph mandy_links
+	subgraph Mandy_links
 	{
 		edge [color="coral"]
-		//mandy
-		mandy -- hunger
-		mandy -- cautious
-		mandy -- opportunist
-		mandy -- social
-		mandy -- megan
+		//Mandy
+		Mandy -- Hunger
+		Mandy -- Cautious
+		Mandy -- Opportunist
+		Mandy -- Social
+		Mandy -- Megan
 	}
 
 	// Bobby (Steve)
-	subgraph bobby_links
+	subgraph Bobby_links
 	{
 		edge [color="blue"]
-		//bobby
-		bobby -- fey
-		bobby -- domination
-		bobby -- cautious
-		bobby -- mercenary
-		bobby -- viet
+		//Bobby
+		Bobby -- "The Sidhe"
+		Bobby -- Domination
+		Bobby -- Cautious
+		Bobby -- Mercenary
+		Bobby -- "Viet District"
 	}
 
 	// Sebastian (Roscoe)
-	subgraph sebastian_links
+	subgraph Sebastian_links
 	{
 		edge [color="red"]
-		//sebastian
+		//Sebastian
 
 		// High Concept
-		sebastian -- search [style="bold"]
+		Sebastian -- "The\nSearch" [style="bold"]
 
 		// Motivation
-		sebastian -- diseased [style="dashed"]
+		Sebastian -- Diseased [style="dashed"]
 
 		// Trouble
-		sebastian -- council [style="dotted"]
+		Sebastian -- "White\nCouncil" [style="dotted"]
 
 		// Aspects
-		sebastian -- cautious
+		Sebastian -- Cautious
 
 		// Locations
-		sebastian -- metro
+		Sebastian -- "Metro\nWest"
 
 	}
 
 	// Vecklethorp (Erik)
-	subgraph vecklethorp_links
+	subgraph Vecklethorp_links
 	{
 		edge [color="orange"]
-		//vecklethorp
-		vecklethorp -- search
-		vecklethorp -- magic
-		vecklethorp -- neutral
-		vecklethorp -- skepticism
-		vecklethorp -- ucf
+		//Vecklethorp
+		Vecklethorp -- "The\nSearch"
+		Vecklethorp -- Magic
+		Vecklethorp -- "True\nNeutral"
+		Vecklethorp -- Skepticism
+		Vecklethorp -- UCF
 	}
 
 	// Wyngard (Chris)
-	subgraph wyngard_links
+	subgraph "Sir Wyngard_links"
 	{
 		edge [color="green"]
-		//wyngard
-		wyngard -- vendetta
-		wyngard -- domination
-		wyngard -- cautious
-		wyngard -- social
-		wyngard -- willam
+		//"Sir Wyngard"
+		"Sir Wyngard" -- Vendetta
+		"Sir Wyngard" -- Domination
+		"Sir Wyngard" -- Cautious
+		"Sir Wyngard" -- Social
+		"Sir Wyngard" -- Willam
 	}
 
 // ==================== FACE GROUPS ====================
 	subgraph face_links
 	{
 		edge [color="purple"]
-		urkel -- search
-		urkel -- willam
-		megan -- search
-		megan -- war
-		megan -- universal
-		willam -- vendetta
-		willam -- disney
-		willam -- magic
-		coats -- magic
-		coats -- bartholomew
-		coats -- council
-		coats -- fey
-		escobar -- ucf
-		escobar -- fey
-		escobar -- voris
-		escobar -- reggie
-		escobar -- hunger
-		reggie -- jessup
-		reggie -- magic
-		reggie -- fey
-		bartholomew -- council
-		boshnik -- social
-		voris -- hunger
-		voris -- mitch
-		mitch -- protective
+		Urkel -- "The\nSearch"
+		Urkel -- Willam
+		Megan -- "The\nSearch"
+		Megan -- "Turf\nWar"
+		Megan -- "Universal\nStudios"
+		Willam -- Vendetta
+		Willam -- Disney
+		Willam -- Magic
+		"Black\nCoats" -- Magic
+		"Black\nCoats" -- Bartholomew
+		"Black\nCoats" -- "White\nCouncil"
+		"Black\nCoats" -- "The Sidhe"
+		"Pablo\nEscobar" -- UCF
+		"Pablo\nEscobar" -- "The Sidhe"
+		"Pablo\nEscobar" -- Voris
+		"Pablo\nEscobar" -- Reggie
+		"Pablo\nEscobar" -- Hunger
+		Reggie -- "Lake\nJessup"
+		Reggie -- Magic
+		Reggie -- "The Sidhe"
+		Bartholomew -- "White\nCouncil"
+		Boshnik -- Social
+		Voris -- Hunger
+		Voris -- Mitch
+		Mitch -- Protective
 	}
 
 // ==================== LOCATION GROUPS ====================
 
 	subgraph location_links
 	{
-		ucf -- skepticism
-		disney -- fey
-		disney -- magic
-		pier -- neutral
-		metro -- diseased
+		UCF -- Skepticism
+		Disney -- "The Sidhe"
+		Disney -- Magic
+		"The Pier" -- "True\nNeutral"
+		"Metro\nWest" -- Diseased
 	}
 
 }
