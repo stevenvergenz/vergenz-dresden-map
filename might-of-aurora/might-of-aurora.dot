@@ -1,6 +1,6 @@
 graph might_of_aurora
 {
-	graph [overlap=scale, splines=ortho]
+	graph [overlap=scale, splines=spline]
 	node [fixedsize="true", width="1.0", height="1.0"]
 
 // ==================== PLAYER CHARACTERS ====================
@@ -156,7 +156,7 @@ graph might_of_aurora
 		"Black\nCoats" -- Magic
 		"Black\nCoats" -- Bartholomew
 		"Black\nCoats" -- "White\nCouncil"
-		"Black\nCoats" -- "The\nSidhe"
+		"Black\nCoats" -- "Viet\nDistrict"
 		"Pablo\nEscobar" -- UCF
 		"Pablo\nEscobar" -- "The\nSidhe"
 		"Pablo\nEscobar" -- Voris
