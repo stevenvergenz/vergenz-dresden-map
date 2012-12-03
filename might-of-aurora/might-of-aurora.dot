@@ -7,45 +7,54 @@ graph might_of_aurora
 	subgraph pcs
 	{
 		node [fixedsize="false", shape=box, style="filled"]
-		"Mandy" [fillcolor="coral"]
-		"Bobby" [fillcolor="blue"]
-		"Sebastian" [fillcolor="red"]
-		"Vecklethorp" [fillcolor="orange"]
-		"Sir Wyngard" [fillcolor="green"]
+
+		"Mandy"
+		"Bobby"
+		"Sebastian" 
+		"Vecklethorp"
+		"Sir\nWyngard"
 	}
 
 // ==================== ASPECTS ====================
 	subgraph aspects
 	{
-		node [shape=triangle, regular=true]
+		node [shape=triangle, type="regular"]
+
 		"The\nSearch"
-		"Turf\nWar"
-		Magic
-		"The\nSidhe"
-		"Ley\nLines"
 		Domination
 		Vendetta
 		Opportunist
-		Hunger
-		Diseased
-		Mercenary
-		"White\nCouncil"
 		Cautious
-		"True\nNeutral"
-		Skepticism
 		Social
 		Protective
-		Technology
 		Reckless
+		Stoic
+		Explode
+		Beauty
+		Theft
+		Optimistic
+		"Turf\nWar"
+		"The\nSidhe"
+		Technology
+		Diseased
+		"Ley\nLines"
+		Magic
+		"White\nCouncil"
+		Skepticism
+		Hunger
+		Mercenary
+		"True\nNeutral"	
+		Technology
 	}
 
 // ==================== FACES ====================
 	subgraph faces
 	{
 		node [shape="circle"]
-		Urkel
+
+		Tyrion
 		Megan
-		Willam
+		Wilem
 		"Black\nCoats"
 		"Pablo\nEscobar"
 		Reggie
@@ -59,6 +68,7 @@ graph might_of_aurora
 	subgraph locations
 	{
 		node [shape="diamond"]
+
 		UCF
 		"Universal\nStudios"
 		Disney
@@ -66,6 +76,11 @@ graph might_of_aurora
 		"Metro\nWest"
 		"Lake\nJessup"
 		"Viet\nDistrict"
+		"Hamburger\nMary's"
+		Hardknocks
+		"City\nHall"
+		"Downtown\nLibrary"
+		"Zombie\nFortress"
 	}
 
 // ==================== PLAYER CHARACTER GROUPS ====================
@@ -73,103 +88,149 @@ graph might_of_aurora
 	// Mandy (Travis)
 	subgraph Mandy_links
 	{
-		edge [color="coral"]
-		//Mandy
+		Mandy [fillcolor="burlywood4"]
+		edge [color="burlywood4"]
+
 		Mandy -- Hunger
 		Mandy -- Cautious
 		Mandy -- Opportunist
 		Mandy -- Social
 		Mandy -- Megan
+		Mandy -- Theft
+		Mandy -- Mercenary
+		Mandy -- Wilem
+		Mandy -- "Metro\nWest"
+		Mandy -- "Sir\nWyngard"
 	}
 
 	// Bobby (Steve)
 	subgraph Bobby_links
 	{
-		edge [color="blue"]
-		//Bobby
+		Bobby [fillcolor="cadetblue4"]
+		edge [color="cadetblue4"]
+
 		Bobby -- "The\nSidhe"
 		Bobby -- Domination
 		Bobby -- Cautious
 		Bobby -- Mercenary
 		Bobby -- "Viet\nDistrict"
+		Bobby -- Stoic
+		Bobby -- Megan
+		Bobby -- Reggie
+		Bobby -- "True\nNeutral"
+		Bobby -- Wilem
+		Bobby -- Sebastion
+		Bobby -- Technology
 	}
 
 	// Sebastian (Roscoe)
 	subgraph Sebastian_links
 	{
-		edge [color="red"]
-		//Sebastian
+		Sebastian [fillcolor="red4", fontcolor="white"]
+		edge [color="red4"]
 
-		// High Concept
-		Sebastian -- "The\nSearch" [style="bold"]
-
-		// Motivation
-		Sebastian -- Diseased [style="dashed"]
-
-		// Trouble
-		Sebastian -- "White\nCouncil" [style="dotted"]
-
-		// Aspects
+	// High Concept
+		Sebastian -- "The\nSearch"
+	// Trouble
+		Sebastian -- "White\nCouncil"
+	// Aspects
+		Sebastian -- Diseased
 		Sebastian -- Cautious
-
-		// Locations
+		Sebastian -- Stoic
+		Sebastian -- Magic
+		Sebastian -- "Ley\nLines"
+	// Locations
 		Sebastian -- "Metro\nWest"
-
+	// Co Stars
+		Sebastian -- Vecklethorp
+	// Associates
+		Sebastian -- Bartholomew
 	}
 
 	// Vecklethorp (Erik)
 	subgraph Vecklethorp_links
 	{
-		edge [color="orange"]
-		//Vecklethorp
+		Vecklethorp [fillcolor="darkgoldenrod"]
+		edge [color="darkgoldenrod"]
+
 		Vecklethorp -- "The\nSearch"
 		Vecklethorp -- Magic
 		Vecklethorp -- "True\nNeutral"
 		Vecklethorp -- Skepticism
 		Vecklethorp -- UCF
+		Vecklethorp -- Mandy
+		Vecklethorp -- Hunger
+		Vecklethorp -- Tyrion
+		Vecklethorp -- Mercenary
+		Vecklethorp -- Optimistic
 	}
 
 	// Wyngard (Chris)
-	subgraph "Sir Wyngard_links"
+	subgraph "Sir\nWyngard_links"
 	{
-		edge [color="green"]
-		//"Sir Wyngard"
-		"Sir Wyngard" -- Vendetta
-		"Sir Wyngard" -- Domination
-		"Sir Wyngard" -- Cautious
-		"Sir Wyngard" -- Social
-		"Sir Wyngard" -- Willam
+		"Sir\nWyngard" [fillcolor="chartreuse4"]
+		edge [color="chartreuse4"]
+
+		"Sir\nWyngard" -- Vendetta
+		"Sir\nWyngard" -- Domination
+		"Sir\nWyngard" -- Cautious
+		"Sir\nWyngard" -- Social
+		"Sir\nWyngard" -- Wilem
+		"Sir\nWyngard" -- "City\nHall"
+		"Sir\nWyngard" -- Opportunist
+		"Sir\nWyngard" -- Protective
+		"Sir\nWyngard" -- Bobby
+		"Sir\nWyngard" -- "Viet\nDistrict"
+		"Sir\nWyngard" -- Optimistic
 	}
 
 // ==================== FACE GROUPS ====================
 	subgraph face_links
 	{
 		edge [color="purple"]
-		Urkel -- "The\nSearch"
-		Urkel -- Willam
+		Tyrion -- "The\nSearch"
+		Tyrion -- "Downtown\nLibrary"
+		Tyrion -- UCF
+		Tyrion -- Diseased
+		Tyrion -- Wilem
+		Wilem -- Vendetta
+		Wilem -- Disney
+		Wilem -- Magic
 		Megan -- "The\nSearch"
 		Megan -- "Turf\nWar"
+		Megan -- Hunger
 		Megan -- "Universal\nStudios"
-		Willam -- Vendetta
-		Willam -- Disney
-		Willam -- Magic
 		"Black\nCoats" -- Magic
-		"Black\nCoats" -- Bartholomew
 		"Black\nCoats" -- "White\nCouncil"
 		"Black\nCoats" -- "Viet\nDistrict"
-		"Pablo\nEscobar" -- UCF
-		"Pablo\nEscobar" -- "The\nSidhe"
-		"Pablo\nEscobar" -- Voris
-		"Pablo\nEscobar" -- Reggie
-		"Pablo\nEscobar" -- Hunger
+		"Black\nCoats" -- Bartholomew
+		Bartholomew -- "White\nCouncil"
+		Bartholomew -- "Zombie\nFortress"
+		Bartholomew -- Theft
+		Bartholomew -- Protective
+		Bartholomew -- Vendetta
 		Reggie -- "Lake\nJessup"
 		Reggie -- Magic
 		Reggie -- "The\nSidhe"
-		Bartholomew -- "White\nCouncil"
-		Boshnik -- Social
+		Reggie -- "Pablo\nEscobar"
+		"Pablo\nEscobar" -- UCF
+		"Pablo\nEscobar" -- "The\nSidhe"
+		"Pablo\nEscobar" -- "The\nPier"
+		"Pablo\nEscobar" -- Hunger
+		"Pablo\nEscobar" -- Voris
 		Voris -- Hunger
+		Voris -- Hardknocks
+		Voris -- Explode
+		Voris -- Reckless
 		Voris -- Mitch
 		Mitch -- Protective
+		Mitch -- "Lake\nJessup"
+		Mitch -- Domination
+		Mitch -- Optimistic
+		Mitch -- "Hamburger\nMary's"
+		Boshnik -- Social
+		Boshnik -- "City\nHall"
+		Boshnik -- Skepticism
 	}
 
 // ==================== LOCATION GROUPS ====================
@@ -177,10 +238,19 @@ graph might_of_aurora
 	subgraph location_links
 	{
 		UCF -- Skepticism
+		UCF -- Technology
 		Disney -- "The\nSidhe"
 		Disney -- Magic
+		Disney -- "Ley\nLines"
 		"The\nPier" -- "True\nNeutral"
 		"Metro\nWest" -- Diseased
+		"City\nHall" -- Hunger
+		"Universal\nStudios" -- "Turf\nWar"
+		"Viet\nDistrict" -- Mercenary
+		"Zombie\nFortress" -- "White\nCouncil"
+		// No Links
+		// "Hamburger\nMary's"
+		// Hardknocks
 	}
 
 }
