@@ -1,6 +1,6 @@
 graph might_of_aurora
 {
-	graph [overlap=scale, splines=spline]
+	graph [overlap=scale, splines=ortho]
 	node [fixedsize="true", width="1.0", height="1.0"]
 
 // ==================== PLAYER CHARACTERS ====================
